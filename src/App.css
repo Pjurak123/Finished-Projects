@@ -1,0 +1,64 @@
+:root {
+  --clr-primary-dark-blue: hsl(233, 26%, 24%);
+  --clr-primary-lime-green: hsl(136, 65%, 51%);
+  --clr-primary-bright-cyan: hsl(192, 70%, 51%);
+
+  --clr-neutral-main-grayish-blue: hsl(233, 8%, 62%);
+  --clr-neutral-main-light-grayish-blue: hsl(220, 16%, 96%);
+  --clr-neutral-main-very-light-gray: hsl(0, 0%, 98%);
+  --clr-neutral-main-white: hsl(0, 0%, 100%);
+
+  --ff-primary: "Public Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--clr-neutral-main-white);
+  font-size: 1.125rem;
+  min-width: 320px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: var(--ff-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Tablet mode */
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop mode */
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
